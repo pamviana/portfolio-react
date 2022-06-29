@@ -1,0 +1,28 @@
+.data-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--light-pink-background);
+}
+
+.data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-container img{
+    width: 40%;
+}
+
+.data-container p {
+    padding: 3rem 8rem;
+
+}
+
+#button-data {
+    width: auto;
+}
+
+

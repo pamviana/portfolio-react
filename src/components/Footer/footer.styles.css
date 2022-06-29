@@ -1,0 +1,29 @@
+footer {
+  background-color: var(--medium-green);
+  text-align: center;
+  padding: 2rem;
+}
+.custom-shape-divider-bottom-1646369976 {  
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--light-green);
+}
+
+.custom-shape-divider-bottom-1646369976 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+
+.custom-shape-divider-bottom-1646369976 .shape-fill {
+  fill: #92b998;
+}
+
+footer p {
+  color: var(--white);
+}

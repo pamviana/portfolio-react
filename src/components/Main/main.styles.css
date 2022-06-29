@@ -1,0 +1,28 @@
+#welcome-background{
+  width: 100%;
+  position: absolute;
+}
+
+.main-container {
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.main-container h1 {
+  color: var(--dark-green);
+  font-size: 4vw;
+  font-family:'Fredoka';
+  font-weight: 100;
+}
+
+.main-container p {
+  font-size: 1.7vw;
+  color: var(--dark-pink);
+  margin-top: 1rem;
+  font-weight: 2;
+}

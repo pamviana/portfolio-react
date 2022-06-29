@@ -1,0 +1,60 @@
+.about-section {
+    padding: 2rem 5rem;
+    text-align: center;
+    background-color: var(--light-pink-background);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.about-left-box{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#button-read-more {
+    color: var(--white);
+    border-radius: 5px;
+    border: 0;
+    padding: 0.5rem;
+    width: 30%;
+    background-color: var(--dark-green);
+}
+
+.about-container p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.about-container img {
+    width: 25vw;
+    position: relative;
+    border-radius: 5px;
+}
+
+.about-container img:before{
+    content: '';
+    background-image: url("../../img/flower1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 25em;
+    height: 30em;
+    z-index: 1;
+    right: 10em;
+}
+
+.about-right-box{
+    position:relative;
+}
+
+#flower-right{
+    position: absolute;
+    right: 10px;
+}

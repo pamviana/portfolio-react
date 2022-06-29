@@ -1,0 +1,40 @@
+:root {
+    --dark-green: #3b625f;
+    --light-green: rgb(232,244,234);
+    --medium-green: rgb(146, 185, 152);
+    --dark-pink: #f0535d;
+    --light-pink-background: #FAF9F7;
+    --medium-pink-background: #FBF5F3;
+    --white: #f8f8f8;
+    --language-logo: #c4c4c4;
+    --main-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Fredoka', sans-serif; 
+}
+
+.button-square {
+    color: var(--dark-green);
+    width: 20%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px solid var(--dark-green);
+    cursor: pointer;
+  }
+  
+.button-square:hover{
+      color: var(--dark-pink);
+      border-color: 3px solid var(--dark-pink);
+}
+
+h2, h3{
+  font-family: var(--main-font);
+}
+
+p{
+  font-family: var(--secondary-font);
+  font-weight: 300;
+}
+
+button{
+  font-family: var(--secondary-font);
+  font-weight: 400;
+}

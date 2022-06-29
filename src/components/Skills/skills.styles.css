@@ -1,0 +1,29 @@
+.skills-section{
+    background-color: var(--light-pink-background);
+}
+
+.skills-big-box{
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius:  50px;
+    background-color: rgb(232,244,234);
+    margin: 0 1rem;
+}
+
+.skills-logos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 0.8;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+#language-logo {
+    width: 80px;
+}

@@ -2,3 +2,8 @@
     display: flex;
     gap: 4rem;
 }
+
+.test-button{
+    border: none;
+    background-color: transparent;
+}

@@ -1,0 +1,11 @@
+.timeline-section{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.timeline-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 15rem; 
+}

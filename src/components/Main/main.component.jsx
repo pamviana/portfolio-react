@@ -1,10 +1,12 @@
 import React from "react";
 import "./main.styles.css";
 import backgroundImg from "../../img/background.svg";
+import Header from "../Header/header.component";
 
 function Main() {
   return (
     <section className="welcome-section">
+    <Header/>
     <img id="welcome-background" alt="background with roses" src={backgroundImg}/>
       <div className="main-container">
         <div className="main-title">

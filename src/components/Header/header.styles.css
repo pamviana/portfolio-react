@@ -1,13 +1,17 @@
 .main-header {
     display: flex;
     justify-content: space-between;  
-    padding: 1.4rem 4rem;
+    padding: 3rem;
+    position: absolute;
+    z-index: 4;
 }
 
 header img {
-    width: 100px;
+    width: 30px;
 }
 
-.logo-title{
-    font-size: 2rem;
+#button_hamburguer{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }

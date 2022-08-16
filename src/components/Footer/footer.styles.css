@@ -1,7 +1,13 @@
+.footer-section{
+  background-color: var(--light-green);
+}
+
 footer {
   background-color: var(--medium-green);
   text-align: center;
   padding: 2rem;
+  position: relative;
+  z-index: 2;
 }
 .custom-shape-divider-bottom-1646369976 {  
   bottom: -5px;
@@ -11,6 +17,8 @@ footer {
   line-height: 0;
   transform: rotate(180deg);
   background-color: var(--light-green);
+  position: relative;
+  z-index: 1;
 }
 
 .custom-shape-divider-bottom-1646369976 svg {
@@ -21,7 +29,7 @@ footer {
 }
 
 .custom-shape-divider-bottom-1646369976 .shape-fill {
-  fill: #92b998;
+  fill: var(--medium-green);
 }
 
 footer p {

@@ -59,6 +59,7 @@
   background-color: transparent;
   border: 2px solid var(--dark-green);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 #button-more-projects:hover{

@@ -16,11 +16,9 @@ function App() {
       <Main />
       <About />
       <Timeline />
-      <Projects/>
       <Skills/>
-      <DataEnthusiast/>
+      <Projects/>      
       <ContactForm/>      
-      {/*<div className="footer-mask"></div>*/}
       <Footer />
     </div>
   );

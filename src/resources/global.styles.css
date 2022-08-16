@@ -1,10 +1,10 @@
 :root {
-    --dark-green: #3b625f;
-    --light-green: rgb(232,244,234);
-    --medium-green: rgb(146, 185, 152);
-    --dark-pink: #f0535d;
+    --dark-green: #4B5842;
+    --light-green: #ECEFE6;
+    --medium-green: #AAB592;
+    --dark-pink: #C4747C;
     --light-pink-background: #FAF9F7;
-    --medium-pink-background: #FBF5F3;
+    --medium-pink-background: #F9F1F2;
     --white: #f8f8f8;
     --language-logo: #c4c4c4;
     --main-font: 'Arima', cursive;

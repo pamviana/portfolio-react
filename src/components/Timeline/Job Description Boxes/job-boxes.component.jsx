@@ -1,12 +1,12 @@
 import React from "react";
 import "./job-boxes.styles.css";
 
-function JobBoxes(props) {
+function JobBoxes({position, text_align}) {
 
-  const position = props.position;
+  //const position = props.position;
 
   return (
-    <div className="job-box-timeline" style={{ alignSelf: position }}>
+    <div className="job-box-timeline" style={{ alignSelf: position, textAlign: text_align }}>
       <h3 className="title-job">Job Title, Company Name</h3>
       <p className="job-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

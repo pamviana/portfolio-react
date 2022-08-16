@@ -7,12 +7,17 @@ function Timeline() {
     <section className="timeline-section">
       <h2>Job Timeline</h2>
       <div className="timeline-container">
-        <JobBoxes position="flex-end" />
-        <JobBoxes position="flex-start" />
-        <JobBoxes position="flex-end" />
-        <JobBoxes position="flex-start" />
-        <JobBoxes position="flex-end" />
+        <div className="vertical-line"></div>
+        <div className="timeline-boxes-left timeline-division">
+          <JobBoxes position="flex-start" text_align="right" />
+          <JobBoxes position="flex-start" text_align="right" />
         </div>
+        <div className="timeline-boxes-right timeline-division">
+          <JobBoxes position="flex-end" text_align="left" />
+          <JobBoxes position="flex-end" text_align="left" />
+          <JobBoxes position="flex-end" text_align="left" />
+        </div>
+      </div>
     </section>
   );
 }

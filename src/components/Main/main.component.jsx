@@ -11,7 +11,7 @@ function Main() {
       <div className="main-container">
         <div className="main-title">
           <h1>
-            <span style={{ fontSize: "100px", fontWeight: "400" }}>
+            <span style={{ fontSize: "2em", fontWeight: "400" }}>
               Oh, hello!
             </span>{" "}
             <br /> My name is Pamella, <br />
@@ -19,7 +19,7 @@ function Main() {
             <span
               style={{
                 fontFamily: "'Shadows Into Light Two', cursive",
-                fontSize: "60px",
+                fontSize: "2em",
                 fontWeight: "600",
                 color: "var(--dark-pink)",
               }}

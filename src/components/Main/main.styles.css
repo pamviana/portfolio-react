@@ -4,12 +4,11 @@
 }
 
 .main-container {
-  padding: 1rem 5rem;
+  padding: 16% 0;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 100vh;
   position: relative;
 }
 

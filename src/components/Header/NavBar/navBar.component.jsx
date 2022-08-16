@@ -3,11 +3,11 @@ import './navBar.styles.css'
 
 function NavBar() {
   return (
-    <nav>
+    <nav className="main_menu">
       <ul>
-        <li> Home</li>
-        <li> About </li>
-        <li> Projects</li>
+        <li> Resume </li>
+        <li> About Me </li>
+        <li> Projects </li>
         <li> Contact Me</li>
       </ul>
     </nav>

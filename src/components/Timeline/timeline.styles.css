@@ -18,6 +18,41 @@
     grid-template-rows: repeat(7,1fr);
 }
 
+@media screen and (max-width: 950px) {
+    .timeline-container {
+        width: 80%;
+        margin: 2rem 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0;
+    }
+
+    .job-box-timeline{
+        z-index: 6;
+        text-align: center !important;
+        margin: 0;
+        border: 2px solid var(--dark-green);
+    }
+
+    .date-timeline-box {
+        margin: 2rem 0;
+        background-color: var(--dark-pink);
+        padding: 10px;
+        z-index: 6;
+        color: white;
+    }
+
+    .job-box-timeline::before {
+        display: none;
+    }
+  }
+
 .job-boxes-container{
     display: flex;
     flex-direction: column;

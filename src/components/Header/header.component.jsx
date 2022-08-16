@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.styles.css";
-import logoImg from "../../img/logo.png";
-import NavBar from "./NavBar/navBar.component";
 import menu_hamburguer from "../../resources/menu_hamburguer.svg";
+import close_menu from "../../resources/close_menu.svg";
+import NavBar from "./NavBar/navBar.component";
 
 function Header() {
+  const [isMenuActive, setIsMenuActive] = useState(true);
+
   return (
     <header className="main-header">
-    <button id="button_hamburguer">
-    <img alt="hamburguer menu" src={menu_hamburguer}></img>
-    </button>
-      <div className="hamburguer"></div>      
+      <button
+        id="button_hamburguer"
+        onClick={() => setIsMenuActive(!isMenuActive)}
+      >
+        {isMenuActive ? (
+          <img id="menu-logo" alt="hamburguer menu" src={menu_hamburguer} />
+        ) : (
+          <img id="menu-logo" alt="hamburguer menu open" src={close_menu} />
+        )}        
+      </button>
+      {isMenuActive ? <></> : <NavBar />}
+      <div className="hamburguer"></div>
     </header>
   );
 }

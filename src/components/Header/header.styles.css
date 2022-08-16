@@ -1,17 +1,21 @@
 .main-header {
-    display: flex;
-    justify-content: space-between;  
-    padding: 3rem;
     position: absolute;
     z-index: 4;
+    height: 80%;
+    width: 100%;
 }
 
 header img {
-    width: 30px;
+    width: 10%;
 }
 
 #button_hamburguer{
+    display: flex;
+    justify-content: space-between;  
+    padding: 4%;    
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    z-index: 6;
+    position: absolute;
 }

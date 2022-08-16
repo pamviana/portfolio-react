@@ -1,5 +1,5 @@
 .about-section {
-    padding: 2rem 5rem;
+    padding: 5%;
     text-align: center;
     background-color: var(--light-pink-background);
 }
@@ -58,4 +58,14 @@
 #flower-right{
     position: absolute;
     right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-left-box{
+        width: 100%;
+    }
 }

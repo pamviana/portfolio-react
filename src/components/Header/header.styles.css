@@ -5,8 +5,12 @@
     width: 100%;
 }
 
-header img {
+#logo-hamburguer {
     width: 10%;
+}
+
+#logo-x-close{
+    width: 30px;
 }
 
 #button_hamburguer{

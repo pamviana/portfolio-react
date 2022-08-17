@@ -14,9 +14,9 @@ function Header() {
         onClick={() => setIsMenuActive(!isMenuActive)}
       >
         {isMenuActive ? (
-          <img id="menu-logo" alt="hamburguer menu" src={menu_hamburguer} />
+          <img className="menu-logo" id="logo-hamburguer" alt="hamburguer menu" src={menu_hamburguer} />
         ) : (
-          <img id="menu-logo" alt="hamburguer menu open" src={close_menu} />
+          <img className="menu-logo" id="logo-x-close" alt="hamburguer menu open" src={close_menu} />
         )}        
       </button>
       {isMenuActive ? <></> : <NavBar />}

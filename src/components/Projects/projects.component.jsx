@@ -9,13 +9,11 @@ function Projects() {
     <section className="projects-section">
       <div className="projects-container">
         <h2>My Projects </h2>
-        <div className="arrows-container">
-          <button> <img alt="arrow left" src={arrowLeft}/></button>
-          <button> <img alt="arrow right" src={arrowRight}/></button>
-        </div>
         <ul className="project-slider">
           <ProjectCard />
+          <button> <img alt="arrow left" src={arrowLeft}/></button>
           <ProjectCard />
+          <button> <img alt="arrow right" src={arrowRight}/></button>
           <ProjectCard />
         </ul>
       </div>

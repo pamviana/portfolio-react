@@ -1,7 +1,7 @@
 .form-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 7rem 10rem;
+    padding: 10% 7%;
     gap: 1rem;
     background-color: var(--light-green);
     position: relative;
@@ -76,4 +76,16 @@
 
 #button-send-msg:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+    .form-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-left-box {
+        width: 100%;
+    }
+    
 }

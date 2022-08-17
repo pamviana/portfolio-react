@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.styles.css";
 import profileImg from "../../img/profile-picture.jpg";
-import flower1 from "../../img/flower1.svg"
+
 function About() {
   return (
     <section className="about-section">

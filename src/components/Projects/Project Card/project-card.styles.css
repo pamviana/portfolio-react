@@ -5,7 +5,7 @@
 }
 
 .thumb-box{
-    width: 470px;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -36,4 +36,10 @@
 .list-tools{
     text-align: center;
     margin-top: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+    .project-card-section {
+        width: 85vw;
+    }
 }

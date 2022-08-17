@@ -15,6 +15,10 @@
     margin: 4rem 1rem;
 }
 
+.skills-big-box p{
+    text-align: center;
+}
+
 .skills-logos{
     display: flex;
     justify-content: space-between;
@@ -26,4 +30,11 @@
 
 #language-logo {
     width: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .skills-logos{
+        justify-content: center;
+        gap: 1rem;
+    }
 }

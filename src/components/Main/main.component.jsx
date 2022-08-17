@@ -20,7 +20,7 @@ function Main() {
             <span
               style={{
                 fontFamily: "'Shadows Into Light Two', cursive",
-                fontSize: "2em",
+                fontSize: "1.5em",
                 fontWeight: "600",
                 color: "var(--dark-pink)",
               }}

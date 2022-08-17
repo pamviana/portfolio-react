@@ -1,6 +1,8 @@
-#welcome-background{
+.welcome-section{
   width: 100%;
-  position: absolute;
+  background-image: url('../../img/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-container {
@@ -24,4 +26,24 @@
   color: var(--dark-pink);
   margin-top: 1rem;
   font-weight: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .welcome-section{
+    background-image: url('../../img/background_mobile.svg');
+    height: 100vh;
+  }
+
+  .main-container{
+    padding: 0 2rem;
+    height: 100%;
+  }
+
+  .main-container h1 {
+    font-size: 7vw;
+  }
+
+  .main-container p {
+    font-size: 4.7vw;
+  }
 }

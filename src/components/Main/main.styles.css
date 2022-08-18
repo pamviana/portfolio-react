@@ -89,6 +89,11 @@
   animation-fill-mode: forwards;
 }
 
+#pam-svg{
+  width: 10vw;
+  height: 100%;
+}
+
 #pam-svg-p1{
   stroke-dasharray: 1099;
   animation: 2s showPam linear;
@@ -152,6 +157,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  #title-first-row{
+    font-size:4em;
+  }
   .welcome-section{
     background-image: url('../../img/background_mobile.svg');
     height: 100vh;
@@ -169,7 +177,22 @@
   }
 
   .main-container p {
+    font-size: 7.7vw;
+    padding: 0 1vw;
+  }
+
+  #pam-svg{
+    width: 17vw;
+  }
+
+  #sub-title-main{
     font-size: 4.7vw;
-    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #third-row-wrapper{
+    flex-direction: column;
+    align-items: center;
   }
 }

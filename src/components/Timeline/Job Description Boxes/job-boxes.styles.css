@@ -9,3 +9,17 @@
 .job-box-timeline h3 {
     font-weight: 600;
 }
+
+#reveal-job-box{
+    transition: all 1s ease;
+}
+
+#hidden-job-box-left{
+    opacity: 0;
+    transform: translate(-60px, 50%);
+}
+
+#hidden-job-box-right{
+    opacity: 0;
+    transform: translate(60px, 50%);
+}

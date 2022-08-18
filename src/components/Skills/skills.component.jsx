@@ -23,7 +23,7 @@ function Skills() {
           <img alt="figma" id="language-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
           <img alt="github" id="language-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
           <img alt="jira" id="language-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg" />
-        <div class="fading-skills" id={isSkillsTitleRef ? "reveal-logos" : ""}></div>
+        <div className="fading-skills" id={isSkillsTitleRef ? "reveal-logos" : ""}></div>
           </div>
         
       </div>

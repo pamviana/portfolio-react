@@ -14,12 +14,22 @@
   color: var(--dark-green);
 }
 
-.project-slider img {
+.arrows-container{
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 32rem;
+}
+
+.arrows-container img {
   color: #fff;
   width: 100%;
 }
 
-.project-slider button {
+.arrows-container button {
   width: 50px;
   height: 50px;
   background: none;
@@ -35,7 +45,7 @@
   gap: 5rem;
   overflow: hidden;
   justify-content: center;
-  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .center-button {
@@ -57,6 +67,8 @@
     border-color: 3px solid var(--dark-pink);
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 650px) {
+  .arrows-container{
+  display: none;
+  }
 }

@@ -1,8 +1,12 @@
 import React from "react";
 import SocialMedia from "../SocialMedia/social-media.component";
+import { useInView } from 'react-intersection-observer';
 import "./contact-form.styles.css";
 
 function ContactForm() {
+
+  const {ref: contactRef, inView: isContactVisible} = useInView();  
+
   return (
     <section>
       <div className="custom-shape-divider-bottom-1646368988">
@@ -28,8 +32,8 @@ function ContactForm() {
           ></path>
         </svg>
       </div>
-      <div className="form-wrapper">
-        <div className="contact-left-box">
+      <div ref={contactRef} className="form-wrapper">
+        <div id={isContactVisible ?  "show-contact-section" : "contact-section"} className="contact-left-box">
           <h2>Let's Get in Touch =)</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -39,7 +43,7 @@ function ContactForm() {
           </p>
           <SocialMedia />
         </div>
-        <form className="contact-form">
+        <form className="contact-form" id={isContactVisible ?  "show-contact-section" : "form-section"}>
           <label htmlFor="first-name" hidden>
             Name
           </label>

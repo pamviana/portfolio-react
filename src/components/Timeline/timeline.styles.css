@@ -94,3 +94,17 @@
     margin-top: -14px;
 }
 
+/* ---------- STYLES FOR ANIMATION ----------*/
+
+#timeline-date{
+    opacity: 0;
+}
+
+#reveal-timeline-date{
+    transition: all 1s ease-in-out;
+    color: red;
+}
+
+#reveal-job-box{
+
+}

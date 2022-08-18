@@ -1,7 +1,8 @@
 import React from "react";
 import "./job-boxes.styles.css";
 
-function JobBoxes({position, text_align, grid_area}) {
+function JobBoxes({position, text_align, grid_area, ref_props}) {
+
 
   return (
     <div className="job-box-timeline" style={{ justifySelf: position, textAlign: text_align, gridArea: grid_area }}>

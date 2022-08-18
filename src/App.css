@@ -142,3 +142,34 @@ a {
     background-image: url('./img/mountain.svg');
     background-size: cover;
 }
+
+/*----------- STYLES USED IN COMMON IN THE COMPONENTS -----------*/
+
+#title{
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+#reveal-title{
+  transition: all 1s ease-in-out;
+}
+
+#description-text{
+  opacity: 0;
+}
+
+#reveal-description{
+  transition: all 1s ease-in-out;
+}
+
+#button-before-animation{
+  opacity: 0;
+}
+
+#button-animated{
+  transition: all 1s ease-in-out;
+}
+
+
+
+

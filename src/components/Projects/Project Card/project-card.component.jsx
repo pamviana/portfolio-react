@@ -2,9 +2,9 @@ import React from "react";
 import "./project-card.styles.css";
 import projectPic from "../../../img/project-discord.JPG";
 
-function ProjectCard() {
+function ProjectCard({grid_column, title}) {
   return (
-    <li className="project-card-section">
+    <li className="project-card-section" style={{gridColumn: grid_column}}>
       <div className="project-card-container">
         <div className="thumb-box">
           <img
@@ -14,7 +14,7 @@ function ProjectCard() {
           ></img>
         </div>
         <div className="project-card-texts">
-          <h3>Project Title</h3>
+          <h3>{title}</h3>
           <p id="project-description">
             Project Description Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et

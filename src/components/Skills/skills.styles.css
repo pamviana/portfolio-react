@@ -26,6 +26,21 @@
     opacity: 0.8;
     flex-wrap: wrap;
     margin-top: 2rem;
+    position: relative;
+}
+
+.fading-skills{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--light-green);
+    transition: all 2s ease-in-out;
+}
+
+#reveal-logos{
+    width: 0%;
 }
 
 #language-logo {

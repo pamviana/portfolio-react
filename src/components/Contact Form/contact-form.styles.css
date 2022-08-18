@@ -86,6 +86,19 @@
 
     .contact-form, .contact-left-box {
         width: 100%;
-    }
-    
+    }    
+}
+
+#contact-section{
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+#form-section{
+    opacity: 0;
+    transform: translateX(60px);
+}
+
+#show-contact-section{
+    transition: all 1s ease-in-out;
 }

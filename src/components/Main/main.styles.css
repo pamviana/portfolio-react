@@ -194,5 +194,6 @@
   .third-row-wrapper{
     flex-direction: column;
     align-items: center;
+    margin-top: 7px;
   }
 }

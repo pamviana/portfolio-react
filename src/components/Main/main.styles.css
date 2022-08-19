@@ -191,7 +191,7 @@
 }
 
 @media screen and (max-width: 440px) {
-  #third-row-wrapper{
+  .third-row-wrapper{
     flex-direction: column;
     align-items: center;
   }

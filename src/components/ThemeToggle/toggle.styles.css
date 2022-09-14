@@ -1,0 +1,38 @@
+.toggle-wrapper{
+    position: absolute;
+    margin: 4%;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;    
+}
+
+.toggle-icon{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.toggle-wrapper img{
+    
+    transition: all 1s ease-in-out;
+}
+
+.toggle-draw{
+    background-color: var(--dark-pink);
+    width: 35px;
+    height: 20px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-circle{
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin: 0 1px;
+}
+
+.move-toggle{
+    justify-content: flex-end;
+}

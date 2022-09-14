@@ -1,7 +1,9 @@
 .project-card-section {
-    flex: 0 0 auto;
-    width: 470px;
+    flex: 0 0 38%;
     background-color: var(--medium-pink-background);
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: all 5s ease-in;
 }
 
 .thumb-box{
@@ -36,6 +38,31 @@
 .list-tools{
     text-align: center;
     margin-top: 1rem;
+}
+
+#current-card{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.move-card-forward{
+    animation: 2s moveToCurrent forwards;
+}
+
+.move-card-backword{
+    animation: 2s moveToPrevious forwards;
+}
+
+@keyframes moveToCurrent{
+    100%{
+        transform: translateX(-115%);
+    }
+}
+
+@keyframes moveToPrevious{
+    100%{
+        transform: translateX(115%);
+    }
 }
 
 @media screen and (max-width: 650px) {

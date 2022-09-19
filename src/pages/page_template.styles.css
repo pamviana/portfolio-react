@@ -1,0 +1,12 @@
+.page-template{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-template-body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 14rem;
+}

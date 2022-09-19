@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SocialMedia from "../SocialMedia/social-media.component";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
+import emailjs from "@emailjs/browser";
 import "./contact-form.styles.css";
 
 function ContactForm() {
+  const { ref: contactRef, inView: isContactVisible } = useInView();
+  const form = useRef();
+  const [nameInput, setNameInput] = useState("");
+  const [emailInput, setEmailInput] = useState("");
+  const [messageInput, setMessageInput] = useState("");
+  const [messageOnSubmit, setMessageOnSubmit] = useState("");
 
-  const {ref: contactRef, inView: isContactVisible} = useInView();  
+  const sendEmail = (e) => {    
+    setNameInput("");
+    setEmailInput("");
+    setMessageInput("");
+
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_jl7p4tl",
+        "template_bc82tzf",
+        form.current,
+        "OinadwfhqCK296fEW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMessageOnSubmit("Message Sent! =)");          
+        },
+        (error) => {
+          console.log(error.text);
+          setMessageOnSubmit("Something went wrong! =( ");
+        }
+      );
+  };
 
   return (
     <section>
@@ -33,17 +64,23 @@ function ContactForm() {
         </svg>
       </div>
       <div ref={contactRef} className="form-wrapper">
-        <div id={isContactVisible ?  "show-contact-section" : "contact-section"} className="contact-left-box">
+        <div
+          id={isContactVisible ? "show-contact-section" : "contact-section"}
+          className="contact-left-box"
+        >
           <h2>Let's Get in Touch =)</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            I would love to connect with you, so feel free to check out my social 
+            media links below, or fill out the form! I cannot wait to chat with you!
           </p>
           <SocialMedia />
         </div>
-        <form className="contact-form" id={isContactVisible ?  "show-contact-section" : "form-section"}>
+        <form
+          ref={form}
+          className="contact-form"
+          onSubmit={sendEmail}
+          id={isContactVisible ? "show-contact-section" : "form-section"}
+        >
           <label htmlFor="first-name" hidden>
             Name
           </label>
@@ -51,17 +88,36 @@ function ContactForm() {
             type="text"
             name="first-name"
             placeholder="Name"
+            value={nameInput}
+            onChange={(e) => setNameInput(e.target.value)}
             required
           ></input>
-          <label htmlFor="email" hidden>
+          <label htmlFor="sender-email" hidden>
             Email
           </label>
-          <input type="email" name="email" placeholder="Email" required></input>
-          <label htmlFor="message" hidden>
+          <input
+            type="email"
+            name="sender-email"
+            placeholder="Email"
+            required
+            value={emailInput}
+            onChange={(e) => setEmailInput(e.target.value)}
+          ></input>
+          <label htmlFor="sender-message" hidden>
             Message
           </label>
-          <textarea name="message" rows="8" placeholder="Message" required />
-          <button id="button-send-msg">Send Message</button>
+          <textarea
+            name="sender-message"
+            rows="8"
+            placeholder="Message"
+            value={messageInput}
+            required
+            onChange={(e) => setMessageInput(e.target.value)}
+          />
+          <div className="align-message-button">
+            <p className="message-submit">{messageOnSubmit}</p>
+            <button id="button-send-msg">Send Message</button>
+          </div>
         </form>
       </div>
     </section>

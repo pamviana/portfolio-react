@@ -25,7 +25,7 @@
     background-color: var(--dark-pink);
     position: absolute;
     top: 0;
-    height: 100%;
+    min-height: 466px;
     width: 100%;
     z-index: 5;
     display: flex;

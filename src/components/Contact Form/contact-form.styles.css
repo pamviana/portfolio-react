@@ -102,3 +102,15 @@
 #show-contact-section{
     transition: all 1s ease-in-out;
 }
+
+.align-message-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-submit{
+    margin-left: 30px;
+    font-weight: 400;
+    color: var(--dark-green);
+}

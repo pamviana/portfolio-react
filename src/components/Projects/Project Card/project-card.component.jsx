@@ -1,9 +1,13 @@
 import React from "react";
 import "./project-card.styles.css";
 
-function ProjectCard({grid_column, title, cardID, projectPic}) {
+function ProjectCard({ grid_column, title, cardID, projectPic, demoLink, gitLink }) {
   return (
-    <li className="project-card-section" style={{gridColumn: grid_column}} id={cardID}>
+    <li
+      className="project-card-section"
+      style={{ gridColumn: grid_column }}
+      id={cardID}
+    >
       <div className="project-card-container">
         <div className="thumb-box">
           <img
@@ -21,12 +25,15 @@ function ProjectCard({grid_column, title, cardID, projectPic}) {
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.
             <br />
-            <a href="www.google.com">Learn More </a>
           </p>
 
           <p className="list-tools">
             JavaScript - HTML - CSS - React - Supabase
           </p>
+          <div className="button-project-wrap">
+            <button className="project-button"><a href={demoLink}>Demo</a></button>
+            <button className="project-button"><a href={gitLink}>GitHub Repo</a></button>
+          </div>
         </div>
       </div>
     </li>

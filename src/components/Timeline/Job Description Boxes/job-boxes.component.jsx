@@ -1,7 +1,8 @@
 import React from "react";
 import "./job-boxes.styles.css";
 
-function JobBoxes({ position, text_align, grid_area, isRowVisible }) {
+function JobBoxes({ position, text_align, grid_area, isRowVisible, description, title}) {
+  
   return (
     <div
       className="job-box-timeline"
@@ -12,11 +13,9 @@ function JobBoxes({ position, text_align, grid_area, isRowVisible }) {
       }}      
       id={isRowVisible ? "reveal-job-box" : text_align === "left" ? "hidden-job-box-right" : "hidden-job-box-left"}
     >
-      <h3 className="title-job">Job Title, Company Name</h3>
+      <h3 className="title-job">{title}</h3>
       <p className="job-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco
+        {description} 
       </p>
     </div>
   );

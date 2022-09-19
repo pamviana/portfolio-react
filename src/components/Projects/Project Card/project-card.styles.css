@@ -1,72 +1,93 @@
 .project-card-section {
-    flex: 0 0 38%;
-    background-color: var(--medium-pink-background);
-    opacity: 0.5;
-    transform: scale(0.9);
-    transition: all 5s ease-in;
+  flex: 0 0 38%;
+  background-color: var(--medium-pink-background);
 }
 
-.thumb-box{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#project-thumb{
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    border-radius: 3px;
+.project-card-container {
+  margin: 20px 40px;
+  gap: 1rem;
 }
 
-.project-card-texts{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
+.thumb-box {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#project-thumb {
+  height: 90%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.project-card-texts {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 #project-description {
-    text-align: justify;
+  text-align: justify;
 }
 
 .project-card-texts h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.list-tools{
-    text-align: center;
-    margin-top: 1rem;
+.list-tools {
+  text-align: center;
+  margin-top: 1rem;
 }
 
-#current-card{
-    transform: scale(1);
-    opacity: 1;
+.button-project-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
-.move-card-forward{
-    animation: 2s moveToCurrent forwards;
+.project-button{
+  color: var(--dark-green);
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--dark-green);
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.move-card-backword{
-    animation: 2s moveToPrevious forwards;
+.project-button:hover{
+  color: var(--dark-pink);
+  border-color: 3px solid var(--dark-pink);
+  transform: scale(1.1);
 }
 
-@keyframes moveToCurrent{
-    100%{
-        transform: translateX(-115%);
-    }
-}
-
-@keyframes moveToPrevious{
-    100%{
-        transform: translateX(115%);
-    }
-}
 
 @media screen and (max-width: 650px) {
-    .project-card-section {
-        width: 85vw;
-    }
+  .project-card-section {
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-card-container {
+    display: flex;
+  }
+  .project-card-texts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-card-texts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #project-thumb {
+    height: 100%;
+    width: 100%;
+  }
 }

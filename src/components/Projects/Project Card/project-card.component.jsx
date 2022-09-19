@@ -1,7 +1,7 @@
 import React from "react";
 import "./project-card.styles.css";
 
-function ProjectCard({ grid_column, title, cardID, projectPic, demoLink, gitLink }) {
+function ProjectCard({ grid_column, title, cardID, projectPic, demoLink, gitLink, usedTools }) {
   return (
     <li
       className="project-card-section"
@@ -28,7 +28,7 @@ function ProjectCard({ grid_column, title, cardID, projectPic, demoLink, gitLink
           </p>
 
           <p className="list-tools">
-            JavaScript - HTML - CSS - React - Supabase
+            {usedTools}
           </p>
           <div className="button-project-wrap">
             <button className="project-button"><a href={demoLink}>Demo</a></button>

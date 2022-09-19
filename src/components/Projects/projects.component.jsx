@@ -15,7 +15,7 @@ function Projects() {
       title: "Math Scanner Solver",
       picture: mathPic,
       description: "",
-      usedTools: "",
+      usedTools: "JavaScript - HTML - CSS - React - Express.JS - Node.JS",
       demoLink: "https://youtu.be/zM3XPDBlQP0",
       gitLink: "https://github.com/pamviana/MathScanner"
     },
@@ -23,7 +23,7 @@ function Projects() {
       title: "Discord Clone",
       picture: projectPic,
       description: "",
-      usedTools: "",
+      usedTools: "JavaScript - HTML - CSS - React - Supabase",
       demoLink: "https://discord-clone-project.vercel.app/",
       gitLink: "https://github.com/pamviana/discord-clone"
     },
@@ -31,7 +31,7 @@ function Projects() {
       title: "TxRx Dashboard",
       picture: dashboardPic,
       description: "",
-      usedTools: "",
+      usedTools: "JavaScript - HTML - CSS - React - PHP",
       demoLink: "",
       gitLink: "https://github.com/pamviana/TxrxDashboard"
     },
@@ -39,9 +39,9 @@ function Projects() {
       title: "Portfolio Website",
       picture: projectWeb,
       description: "",
-      usedTools: "",
+      usedTools: "JavaScript - HTML - CSS - React - Azure",
       demoLink: "",
-      gitLink: ""
+      gitLink: "https://github.com/pamviana/portfolio-react"
     },
   ]);
 
@@ -76,6 +76,7 @@ function Projects() {
             title={cards[0].title}
             key={cardKey++}
             cardID="previous-card"
+            usedTools={cards[0].usedTools}
             projectPic={cards[0].picture}
             demoLink={cards[0].demoLink}
             gitLink={cards[0].gitLink}
@@ -84,6 +85,7 @@ function Projects() {
             title={cards[1].title}
             key={cardKey++}
             cardID="current-card"
+            usedTools={cards[1].usedTools}
             projectPic={cards[1].picture}
             demoLink={cards[1].demoLink}
             gitLink={cards[1].gitLink}
@@ -92,6 +94,7 @@ function Projects() {
             title={cards[2].title}
             key={cardKey++}
             cardID="next-card"
+            usedTools={cards[2].usedTools}
             projectPic={cards[2].picture}
             demoLink={cards[2].demoLink}
             gitLink={cards[2].gitLink}
@@ -100,6 +103,7 @@ function Projects() {
             title={cards[3].title}
             key={cardKey++}
             cardID="next-card"
+            usedTools={cards[3].usedTools}
             projectPic={cards[3].picture}
             demoLink={cards[3].demoLink}
             gitLink={cards[3].gitLink}
